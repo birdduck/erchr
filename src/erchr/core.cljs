@@ -53,7 +53,7 @@
   [{:keys [name value on-change]}]
   (d/div {:class "flex justify-between pv1"}
     (d/label {:htmlFor name} name)
-    (d/input {:class "mw4 mw3-ns tr" :name name :type "number" :value value :min STAT-MIN-VALUE :max STAT-MAX-VALUE :onChange on-change})))
+    (d/input {:class "mw4 mw3-ns tr" :name name :type "number" :value value :min STAT-MIN-VALUE :max STAT-MAX-VALUE :pattern "\\d*" :onChange on-change})))
 
 (defnc stat
   [{:keys [name value]}]
